@@ -5,11 +5,11 @@ font-family: "Inter", "Helvetica Neue", sans-serif;
   font-weight: bold;
   font-size: 26px;
 
-  animation: shake-blur 0.08s infinite;
+  animation: shake-blur 0.01s infinite;
 }
 
 .shake-link:hover {
-  animation: shake-blur 0.08s infinite;
+  animation: shake-blur 0.16s infinite;
 
 /* Animation SHAKE */
 @keyframes shake-blur {
