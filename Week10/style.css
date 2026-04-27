@@ -13,12 +13,12 @@
 }
 
 body {
-    background-color: #fff0f6;
-    color: #4a4a4a;
+    background-color: #deddd3;
+    color: #b07943;
     margin: 0;
     padding: 20px;
-    font-family: 'Arial', sans-serif;
-    font-size: 16px;
+  font-family: 'Impact', fantasy;    
+  font-size: 26px;
     max-width: 600px;
     margin: auto;
     background-color: rgba(255, 255, 255, 0.9);
@@ -27,25 +27,26 @@ body {
 
 /* Links */
 a {
-    color: #ff66a3;
-    text-decoration: none;
-    font-weight: bold;
+   text-decoration: underline;
+    text-decoration-color: #e65c40;
+    text-decoration-style: wavy;
 }
 
 a:hover {
-    color: #cc3385;
     text-decoration: underline;
+    text-decoration-color: #e65c40;
+    text-decoration-style: wavy;
 }
 
 /* Headings */
 h1 {
-    color: #ff4d88;
-    font-size: 36px;
+    color: #a12020;
+    font-size: 60px;
     margin: 24px 0 8px;
 }
 
 h2 {
-    color: #ff85a2;
-    font-size: 28px;
+    color: #a15820;
+    font-size: 48px;
     margin: 16px 0 8px;
 }
