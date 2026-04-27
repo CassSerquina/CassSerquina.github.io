@@ -19,20 +19,19 @@
 /* Animation DRUNK */
 .drunk-text {
   display: inline-block;
-  font-family: "Inter", "Helvetica Neue", sans-serif;  
+  font-family: "Inter", "Helvetica Neue", sans-serif;
   font-weight: bold;
   font-size: 3rem;
-  /* Apply the animation */
-  animation: stagger 4s ease-in-out infinite;
-  /* Initial state */
-  transform-origin: center;
-  filter: blur(0px);
 
-  .drunk-text:hover {
-  animation: drunk 0.25s infinite;
+  animation: stagger 4s ease-in-out infinite;
+  transform-origin: center;
 }
 
-@keyframes stagger {
+.drunk-text:hover {
+  animation: drunk 0.3s infinite;
+}
+
+@keyframes drunk {
   0%, 100% { 
     transform: rotate(0deg) translate(0, 0); 
     filter: blur(0px);
@@ -63,7 +62,6 @@ body {
     font-family: "Inter", "Helvetica Neue", sans-serif;
     font-size: 26px;
     max-width: 600px;
-    margin: auto;
     border-radius: 15px;
 }
 
