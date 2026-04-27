@@ -1,17 +1,18 @@
 /* Shake link */
+/* Animation SHAKE */
 .shake-link {
   display: inline-block;
-font-family: "Inter", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Helvetica Neue", sans-serif;
   font-weight: bold;
   font-size: 26px;
 
-  animation: shake-blur 0.01s infinite;
+  animation: shake-blur 0.12s infinite;
 }
 
 .shake-link:hover {
-  animation: shake-blur 0.16s infinite;
+  animation: shake-blur 0.06s infinite;
+}
 
-/* Animation SHAKE */
 @keyframes shake-blur {
   0%   { transform: translate(0, 0) rotate(0deg); }
   25%  { transform: translate(-6px, 2px) rotate(-3deg); }
