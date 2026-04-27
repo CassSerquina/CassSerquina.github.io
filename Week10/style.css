@@ -5,11 +5,11 @@
   font-weight: bold;
   font-size: 26px;
 
-  animation: shake-blur 0.12s infinite;
+  animation: shake-blur 0.5s infinite;
 }
 
 .shake-link:hover {
-  animation: shake-blur 0.16s infinite;
+  animation: shake-blur 0.6s infinite;
 }
 
 /* Animation SHAKE */
@@ -88,7 +88,7 @@ a:visited {
 }
 
 a:hover {
-  color: #cc3385;
+  color: #31591f;
 }
 
 /* Button style */
