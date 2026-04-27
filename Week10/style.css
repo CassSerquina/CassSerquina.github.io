@@ -27,22 +27,25 @@ body {
 
 /* Links */
 a {
-   text-decoration: underline;
+   text-decoration: none;
     text-decoration-color: #e65c40;
-    text-decoration-style: wavy;
+    text-decoration-style: none;
+
+   background-color: #d6bd60;
+   transition: 0.3s;
 }
 
 a:hover {
-    text-decoration: underline;
-    text-decoration-color: #e65c40;
-    text-decoration-style: wavy;
+    text-decoration: none;
+    text-decoration-color: #d6bd600;
+    text-decoration-style: none;
 }
 
 /* Headings */
 h1 {
     color: #a12020;
     font-size: 60px;
-    margin: 24px 0 8px;
+    margin: 0px 0 8px;
 }
 
 h2 {
