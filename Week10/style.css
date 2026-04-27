@@ -76,18 +76,6 @@ body {
     max-width: 1920px;
     border-radius: 15px;
    text-align: center;
-
-  @keyframes matchGifColor {
-  0% { background-color: #3b0135; }   /* Color at start */
-  50% { background-color: #ffad02; }  /* Color halfway */
-  100% { background-color: #ffde02; } /* Color at end (loop) */
-}
-
-  animation: matchGifColor 5s infinite steps(1, end);
-
-  /* Replace 5s with your GIF's total duration */
-  background-image: url('your-image.gif');
-  background-size: cover;
 }
 
 /* Links */
