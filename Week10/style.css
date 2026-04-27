@@ -4,11 +4,11 @@
 }
 
 .shake-link:hover {
-  animation: tilt-n-move-shaking 0.25s infinite;
+  animation: shake 0.25s infinite;
 }
 
 /* Animation */
-@keyframes tilt-n-move-shaking {
+@keyframes shake {
   0% { transform: translate(0, 0) rotate(0deg); }
   25% { transform: translate(5px, 5px) rotate(5deg); }
   50% { transform: translate(0, 0) rotate(0deg); }
