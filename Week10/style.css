@@ -17,7 +17,7 @@ body {
     color: #b07943;
     margin: 0;
     padding: 20px;
-  font-family: 'Impact', fantasy;    
+  font-family: "Inter", "Helvetica Neue",
   font-size: 26px;
     max-width: 600px;
     margin: auto;
@@ -26,13 +26,25 @@ body {
 }
 
 /* Links */
-a {
-   text-decoration: none;
-    text-decoration-color: #e65c40;
-    text-decoration-style: none;
+a:link{
+  color: #cc5733;
+  text-decoration: none;
+}
+a:visited {
+  color: #cc3333;
+  text-decoration: none;
+}
+a:hover {
+  color: #cc3385;
+}
 
-   background-color: #d6bd60;
-   transition: 0.3s;
+
+a {
+  background-color: #d6bd60;
+  padding: 6px 14px;
+  border-radius: 50px;
+
+  display: inline-block;
 }
 
 a:hover {
@@ -46,10 +58,12 @@ h1 {
     color: #a12020;
     font-size: 60px;
     margin: 0px 0 8px;
+  text-align: center;
 }
 
 h2 {
     color: #a15820;
-    font-size: 48px;
-    margin: 16px 0 8px;
+    font-size: 36px;
+    margin: 0px 0 8px;
+    text-align: center;
 }
