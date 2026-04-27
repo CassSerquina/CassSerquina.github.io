@@ -1,7 +1,17 @@
+<html>
+	
+	<style>
+  .shake-text {
+    display: inline-block;
+    animation: shake 0.5s infinite;
+  }
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+  }
+</style>
 
-
-
-		   <html>
 <head>
     <title>A SIMPLE BOTTLE</title>
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -15,11 +25,7 @@
     <p>You being you, you ponder to yourself for a minute and decide what you want to do with said bottle.</p>
 
     <p><strong>You ultimately decide to:</strong></p>
-	
-<div>
-  <p> Gentle Tilt </p>
-  <span class="gentle-hover-shake">Hover on me!</span>
-</div>
+	<div class="shake-text">Shake</div>
 
     
 </body>
