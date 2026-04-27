@@ -1,17 +1,22 @@
-/* 1. Define the shake movement */
-@keyframes shake {
-  0% { transform: translateX(0); }
-  25% { transform: translateX(-5px); }
-  50% { transform: translateX(5px); }
-  75% { transform: translateX(-5px); }
-  100% { transform: translateX(0); }
+/* Shake Movement */
+@keyframes tilt-shaking {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+.shake-link {
+  display: inline-block; /* Required for transform to work */
+  text-decoration: none;
+  color: blue;
 }
 
-/* 2. Apply it to your text */
-.shake-text {
-  display: inline-block; /* Required for transform to work */
-  animation: shake 0.5s infinite; /* Duration and repetition */
+.shake-link:hover {
+  /* name | duration | timing-function | iteration-count */
+  animation: shake 0.2s ease-in-out infinite;
 }
+
 body {
     background-color: #fff0f6;
     color: #4a4a4a;
