@@ -13,31 +13,12 @@ font-family: "Inter", "Helvetica Neue", sans-serif;
 
 /* Animation SHAKE */
 @keyframes shake-blur {
-  0% {
-    transform: translate(0, 0) rotate(0deg);
-    filter: blur(0px);
-  }
-  10% {
-    transform: translate(8px, -6px) rotate(4deg);
-    filter: blur(0.8px);
-  }
-  25% {
-    transform: translate(-8px, 6px) rotate(-4deg);
-    filter: blur(1px);
-  }
-  40% {
-    transform: translate(6px, 4px) rotate(3deg);
-  }
-  60% {
-    transform: translate(-6px, -5px) rotate(-3deg);
-  }
-  80% {
-    transform: translate(4px, 6px) rotate(2deg);
-  }
-  100% {
-    transform: translate(0, 0) rotate(0deg);
-    filter: blur(0px);
-  }
+  0%   { transform: translate(0, 0) rotate(0deg); }
+  25%  { transform: translate(-6px, 2px) rotate(-3deg); }
+  50%  { transform: translate(6px, -2px) rotate(3deg); }
+  75%  { transform: translate(-4px, 4px) rotate(-2deg); }
+  100% { transform: translate(4px, -4px) rotate(2deg); }
+}
 }
 /* Animation DRUNK */
 .drunk-text {
