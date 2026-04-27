@@ -1,27 +1,32 @@
 /* Shake link */
 .shake-link {
   display: inline-block;
+  font-family: "Inter", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+
+  animation: shake-blur 0.5s infinite;
 }
 
-.shake-link:hover {
-  animation: shake 0.25s infinite;
+a.shake-link:hover {
+  animation: shake-blur 0.25s infinite;
 }
 
 /* Animation SHAKE */
-@keyframes shake {
-  0% { transform: translate(0, 0) rotate(0deg); }
-  25% { transform: translate(5px, 5px) rotate(5deg); }
-  50% { transform: translate(0, 0) rotate(0deg); }
-  75% { transform: translate(-5px, 5px) rotate(-5deg); }
-  100% { transform: translate(0, 0) rotate(0deg); }
+@keyframes shake-blur {
+  0% { transform: translate(0, 0) rotate(0deg); filter: blur(0px); }
+  25% { transform: translate(5px, 5px) rotate(5deg); filter: blur(0.5px); }
+  50% { transform: translate(0, 0) rotate(0deg); filter: blur(0px); }
+  75% { transform: translate(-5px, 5px) rotate(-5deg); filter: blur(1px); }
+  100% { transform: translate(0, 0) rotate(0deg); filter: blur(0px); }
 }
 
 /* Animation DRUNK */
 .drunk-text {
   display: inline-block;
-  font-family: "Inter", "Helvetica Neue", sans-serif;
+  font-family: "Lucida Console", "Helvetica Neue", "Monospace";
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 26px;
 
   animation: stagger 4s ease-in-out infinite;
   transform-origin: center;
@@ -29,7 +34,7 @@
 }
 
 .drunk-text:hover {
-  animation: drunk 0.25s infinite;
+  animation: drunk 5s infinite;
 }
 
 @keyframes stagger {
@@ -39,16 +44,16 @@
   }
   25% { 
     transform: rotate(3deg) translate(2px, -2px);
-    filter: blur(3px);
+    filter: blur(1px);
     text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
   }
   50% { 
     transform: rotate(-4deg) translate(-3px, 4px);
-    filter: blur(1px);
+    filter: blur(0.5px);
   }
   75% { 
     transform: rotate(2deg) translate(5px, 2px);
-    filter: blur(4px);
+    filter: blur(1.5px);
   }
 }
 
@@ -67,7 +72,7 @@ body {
     color: #b07943;
     margin: 0;
     padding: 20px;
-    font-family: "Inter", "Helvetica Neue", sans-serif;
+    font-family: "Lucida Console", "Helvetica Neue", "Monospace";
     font-size: 26px;
     max-width: 600px;
     border-radius: 15px;
