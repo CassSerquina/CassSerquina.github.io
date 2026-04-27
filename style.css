@@ -11,6 +11,7 @@
   25% { transform: translateX(-5px); }
   75% { transform: translateX(5px); }
 }
+
 body {
     background-color: #fff0f6;
     color: #4a4a4a;
