@@ -6,7 +6,7 @@
   font-weight: bold;
   font-size: 26px;
 
-  animation: shake-blur 0.10s infinite;
+  animation: shake-blur 0.11s infinite;
 }
 
 .shake-link:hover {
