@@ -24,7 +24,7 @@
 /* Animation DRUNK */
 .drunk-text {
   display: inline-block;
-  font-family: "Lucida Console", "Helvetica Neue", "Monospace";
+  font-family: "Inter", "Helvetica Neue", sans-serif;
   font-weight: bold;
   font-size: 26px;
 
