@@ -117,6 +117,31 @@ h1 {
     text-align: center;
 }
 
+.typewriter {
+  overflow: hidden; /* Hides unrevealed text */
+  border-right: .15em solid orange; /* The blinking cursor */
+  white-space: nowrap; /* Keeps text on one line */
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+  width: 0; /* Starts hidden */
+    font-family: "Lucida Console", "Helvetica Neue", "Monospace";
+  animation: 
+    typing 3.5s steps(30, end) forwards,
+    blink-caret .75s step-end infinite;
+}
+
+/* Reveal text from 0 to 100% width */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The cursor blink effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
 h2 {
     color: #a15820;
     font-size: 36px;
