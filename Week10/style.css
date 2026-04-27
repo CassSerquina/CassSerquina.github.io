@@ -19,16 +19,17 @@
 /* Animation DRUNK */
 .drunk-text {
   display: inline-block;
-  font-family: "Inter", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Helvetica Neue", sans-serif;  
   font-weight: bold;
   font-size: 3rem;
-
+  /* Apply the animation */
   animation: stagger 4s ease-in-out infinite;
+  /* Initial state */
   transform-origin: center;
-}
+  filter: blur(0px);
 
-.drunk-text:hover {
-  animation: drunk 0.3s infinite;
+  .drunk-text:hover {
+  animation: drunk 0.25s infinite;
 }
 
 @keyframes stagger {
@@ -57,11 +58,12 @@
 body {
     background-color: rgba(255, 255, 255, 0.9);
     color: #b07943;
+    margin: 0;
     padding: 20px;
     font-family: "Inter", "Helvetica Neue", sans-serif;
     font-size: 26px;
     max-width: 600px;
-  margin: auto;
+    margin: auto;
     border-radius: 15px;
 }
 
@@ -100,4 +102,4 @@ h2 {
     font-size: 36px;
     margin: 0 0 8px;
     text-align: center;
-}
+} page is not centered and drunk text wont move
