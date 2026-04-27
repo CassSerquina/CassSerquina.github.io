@@ -1,88 +1,67 @@
+/* Shake link */
 .shake-link {
   display: inline-block;
 }
 
 .shake-link:hover {
-  animation: shake 0.5s infinite;
+  animation: tilt-n-move-shaking 0.25s infinite;
 }
 
+/* Animation */
 @keyframes tilt-n-move-shaking {
   0% { transform: translate(0, 0) rotate(0deg); }
   25% { transform: translate(5px, 5px) rotate(5deg); }
-  50% { transform: translate(0, 0) rotate(0eg); }
+  50% { transform: translate(0, 0) rotate(0deg); }
   75% { transform: translate(-5px, 5px) rotate(-5deg); }
   100% { transform: translate(0, 0) rotate(0deg); }
 }
 
-body { font-family: sans-serif; }
-div {
-  text-align: center;
-}
-
-span {
-  background: #48abe0;
-  color: white;
-  padding: 1.5rem;
-  font-size: 1rem;
-  display: inline-block;
-}
-
-span.gentle-tilt-move-shake:hover {
-  animation: tilt-n-move-shaking 0.25s infinite;
-}
-
+/* Body */
 body {
-    background-color: #deddd3;
+    background-color: rgba(255, 255, 255, 0.9);
     color: #b07943;
     margin: 0;
     padding: 20px;
-  font-family: "Inter", "Helvetica Neue",
-  font-size: 26px;
+    font-family: "Inter", "Helvetica Neue", sans-serif;
+    font-size: 26px;
     max-width: 600px;
     margin: auto;
-    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 15px;
 }
 
 /* Links */
-a:link{
+a:link {
   color: #cc5733;
   text-decoration: none;
 }
+
 a:visited {
   color: #cc3333;
-  text-decoration: none;
 }
+
 a:hover {
   color: #cc3385;
 }
 
-
+/* Button style */
 a {
   background-color: #d6bd60;
   padding: 6px 14px;
   border-radius: 50px;
-
   display: inline-block;
-}
-
-a:hover {
-    text-decoration: none;
-    text-decoration-color: #d6bd600;
-    text-decoration-style: none;
 }
 
 /* Headings */
 h1 {
     color: #a12020;
     font-size: 60px;
-    margin: 0px 0 8px;
-  text-align: center;
+    margin: 0 0 8px;
+    text-align: center;
 }
 
 h2 {
     color: #a15820;
     font-size: 36px;
-    margin: 0px 0 8px;
+    margin: 0 0 8px;
     text-align: center;
 }
