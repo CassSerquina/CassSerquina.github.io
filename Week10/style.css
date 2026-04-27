@@ -77,14 +77,17 @@ body {
     border-radius: 15px;
    text-align: center;
 
-  
-  animation: colorChange 10s infinite;
-@keyframes colorChange {
-  0% { background-color: #ff0000; }
-  33% { background-color: #00ff00; }
-  66% { background-color: #0000ff; }
-  100% { background-color: #ff0000; }
+  @keyframes matchGifColor {
+  0% { background-color: #3b0135; }   /* Color at start */
+  50% { background-color: #ffad02; }  /* Color halfway */
+  100% { background-color: #ffde02; } /* Color at end (loop) */
 }
+
+  animation: matchGifColor 5s infinite steps(1, end);
+
+  /* Replace 5s with your GIF's total duration */
+  background-image: url('your-image.gif');
+  background-size: cover;
 }
 
 /* Links */
@@ -116,32 +119,6 @@ h1 {
     margin: 0 0 8px;
     text-align: center;
 }
-
-.typewriter {
-  overflow: hidden; /* Hides unrevealed text */
-  border-right: .15em solid orange; /* The blinking cursor */
-  white-space: nowrap; /* Keeps text on one line */
-  margin: 0 auto; 
-  letter-spacing: .15em; 
-  width: 0; /* Starts hidden */
-    font-family: "Lucida Console", "Helvetica Neue", "Monospace";
-  animation: 
-    typing 3.5s steps(30, end) forwards,
-    blink-caret .75s step-end infinite;
-}
-
-/* Reveal text from 0 to 100% width */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The cursor blink effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange }
-}
-
 h2 {
     color: #a15820;
     font-size: 36px;
