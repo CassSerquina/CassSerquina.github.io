@@ -1,7 +1,7 @@
 /* Shake link */
 .shake-link {
   display: inline-block;
-font-family: "Inter", "Helvetica Neue", sans-serif;
+  font-family: "Inter", "Helvetica Neue", sans-serif;
   font-weight: bold;
   font-size: 26px;
 
@@ -10,6 +10,7 @@ font-family: "Inter", "Helvetica Neue", sans-serif;
 
 .shake-link:hover {
   animation: shake-blur 0.16s infinite;
+}
 
 /* Animation SHAKE */
 @keyframes shake-blur {
