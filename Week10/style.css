@@ -31,7 +31,7 @@
   animation: drunk 0.3s infinite;
 }
 
-@keyframes drunk {
+@keyframes stagger {
   0%, 100% { 
     transform: rotate(0deg) translate(0, 0); 
     filter: blur(0px);
