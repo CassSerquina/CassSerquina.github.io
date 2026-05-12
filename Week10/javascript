@@ -1,0 +1,11 @@
+const text = "This is a full paragraph being typed out character by character. It can handle multiple lines and custom speeds.";
+let i = 0;
+const speed = 50; // Speed in milliseconds
+
+function startTyping() {
+  if (i < text.length) {
+    document.getElementById("typewriter-text").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(startTyping, speed);
+  }
+}
